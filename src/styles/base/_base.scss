@@ -1,3 +1,101 @@
 body {
+  color: white;
+  font-family: 'Dekko', cursive;
+  background-color: gainsboro;
 
 }
+
+
+
+
+
+
+//=====================================
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  header {
+    width: 100%;
+    background: url("../../src/images/vlcsnap-error502 (2).png") center bottom no-repeat, linear-gradient(51deg, #cb0035 30%, #e06900);
+    background-size: cover;
+    filter: contrast(1.2);
+
+    .background {
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(51deg, rgba(203, 0, 53, 0.9), rgba(224, 105, 0, 0.9));
+      z-index: -1;
+
+      .center {
+        margin: 0 auto;
+
+        .main-logo {
+          max-width: 300px;
+          width: 80%;
+          padding: 1em;
+          margin: auto;
+
+          a {
+
+            img {
+              width: 100%;
+            }
+          }
+        }
+
+        .main-nav {
+          text-align: center;
+          line-height: 2.5em;
+
+          li {
+            border-top: 1px solid white;
+            transition: font-size 500ms;
+            &:hover {
+              font-size: 1.1em;
+            }
+
+            a {
+              text-decoration: none;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .main-banner {
+    width: 100%;
+
+    .video-wrap {
+      position: relative;
+      min-height: 200px;
+      overflow: hidden;
+
+      video {
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+
+      .main-title {
+        position: absolute;
+        top: 0vh;
+        left: 0;
+        margin: 17% 10% 0 10%;
+        padding: 5%;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.5);
+
+      }
+    }
+  }
+}
+
