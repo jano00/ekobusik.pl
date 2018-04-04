@@ -5,6 +5,47 @@ body {
 
 }
 
+hr {
+  width: 6em;
+  margin: 1em auto;
+  display: block;
+}
+
+.btn {
+  color: red;
+  background: white;
+  border: 1px solid white;
+  border-radius: 20px;
+  line-height: 1.5em;
+  text-decoration: none;
+  padding: 5px 20px;
+  margin: 1em;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  z-index: 99;
+
+
+  &:hover {
+    color: #fff;
+
+    &:before {
+      transform: translateY(50px);
+    }
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(-118deg, #4964a9, #264699);
+    transition: all 0.2s ease-in;
+    z-index: -1;
+  }
+}
 
 
 
@@ -28,38 +69,36 @@ body {
       background: linear-gradient(51deg, rgba(203, 0, 53, 0.9), rgba(224, 105, 0, 0.9));
       z-index: -1;
 
-      .center {
-        margin: 0 auto;
 
-        .main-logo {
-          max-width: 300px;
-          width: 80%;
-          padding: 1em;
-          margin: auto;
 
-          a {
+      .main-logo {
+        max-width: 300px;
+        width: 80%;
+        padding: 1em;
+        margin: auto;
 
-            img {
-              width: 100%;
-            }
+        a {
+
+          img {
+            width: 100%;
           }
         }
+      }
 
-        .main-nav {
-          text-align: center;
-          line-height: 2.5em;
+      .main-nav {
+        text-align: center;
+        line-height: 2.5em;
 
-          li {
-            border-top: 1px solid white;
-            transition: font-size 500ms;
-            &:hover {
-              font-size: 1.1em;
-            }
+        li {
+          border-top: 1px solid white;
+          transition: font-size 500ms;
+          &:hover {
+            font-size: 1.1em;
+          }
 
-            a {
-              text-decoration: none;
-              color: white;
-            }
+          a {
+            text-decoration: none;
+            color: white;
           }
         }
       }
@@ -72,6 +111,7 @@ body {
     .video-wrap {
       position: relative;
       min-height: 200px;
+      height: 30vw;
       overflow: hidden;
 
       video {
@@ -87,13 +127,47 @@ body {
 
       .main-title {
         position: absolute;
-        top: 0vh;
+        top: 30px;
         left: 0;
-        margin: 17% 10% 0 10%;
-        padding: 5%;
+        right: 0;
+        margin: 10%;
+        padding: 3%;
         text-align: center;
         background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 20px;
+      }
+    }
+  }
 
+  .about {
+    background: url("../../src/images/vlcsnap-error502 (2).png") center bottom no-repeat, linear-gradient(51deg, #cb0035 30%, #e06900);
+    background-size: cover;
+    filter: contrast(1.2);
+
+    .background {
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(51deg, rgba(203, 0, 53, 0.9), rgba(224, 105, 0, 0.9));
+      z-index: -1;
+      text-align: center;
+
+      .h2 {
+        font-size: 1.7em;
+        font-weight: bold;
+        color: yellow;
+        padding:  1em 1em 0 1em;
+      }
+
+      .title-description {
+        width: 70%;
+        text-align: center;
+        font-size: 1.2em;
+        margin: 3% auto;
+      }
+
+      p {
+        opacity: 0.6;
+        padding: 3% 10%;
       }
     }
   }
