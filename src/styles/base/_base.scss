@@ -113,8 +113,16 @@ p {
 }
 
 .content-box {
-  padding: 15% 10% 0 10%;
-  height: 400px;
+  padding: 15% 10% 15% 10%;
+  min-height: 300px;
+}
+
+.background {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(51deg, rgba(203, 0, 53, 0.9), rgba(224, 105, 0, 0.9));
+  z-index: -1;
+  text-align: center;
 }
 
 
@@ -216,12 +224,6 @@ p {
     filter: contrast(1.2);
 
     .background {
-      height: 100%;
-      width: 100%;
-      background: linear-gradient(51deg, rgba(203, 0, 53, 0.9), rgba(224, 105, 0, 0.9));
-      z-index: -1;
-      text-align: center;
-
       .h1 {
         padding:  1em 1em 0 1em;
       }
@@ -254,7 +256,63 @@ p {
     }
   }
 
+  //============= groups =============
 
+  .groups {
+    .img-box {
+      background-image: url("../../src/images/grupy.png");
+      background-position: left;
+    }
+  }
+
+  //============= foreign =============
+
+  .foreign-customers {
+
+
+    .img-box {
+      background-image: url("../../src/images/zagraniczni.png");
+      background-position: right;
+    }
+
+    .flags {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 10%;
+      //background: #cb0035;
+      background: linear-gradient(51deg, rgba(203, 0, 53, 0.6), rgba(224, 105, 0, 0.6));
+      border-radius: 20px;
+      overflow: hidden;
+      z-index: -1;
+
+      img {
+        margin: 2%;
+      }
+    }
+  }
+
+  //============= localization =============
+
+  .localization {
+    background: url("../../src/images/vlcsnap-error502 (2).png") center center no-repeat, linear-gradient(51deg, #cb0035 30%, #e06900);
+    background-size: cover;
+    filter: contrast(1.2);
+
+    .background {
+      .title-description {
+        padding:  10% 10% 0 10%;
+        font-size: 1.5em;
+        font-weight: bold;
+        opacity: .7;
+        text-align: left;
+      }
+
+      .btn-white {
+        margin: 5%;
+      }
+    }
+  }
 
 }
 
