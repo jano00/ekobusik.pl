@@ -2,7 +2,7 @@ body {
   color: white;
   font-family: 'Dekko', cursive;
   font-size: 18px;
-  background-color: #eaeaea;
+  background-color: #f7f7f7;
 }
 
 //============= general =============
@@ -268,8 +268,6 @@ p {
   //============= foreign =============
 
   .foreign-customers {
-
-
     .img-box {
       background-image: url("../../src/images/zagraniczni.png");
       background-position: right;
@@ -279,9 +277,10 @@ p {
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
+      max-width: 310px;
       margin-top: 10%;
       //background: #cb0035;
-      background: linear-gradient(51deg, rgba(203, 0, 53, 0.6), rgba(224, 105, 0, 0.6));
+      background: linear-gradient(51deg, rgba(224, 105, 0, 0.9), rgba(203, 0, 53, 0.9));
       border-radius: 20px;
       overflow: hidden;
       z-index: -1;
@@ -295,24 +294,37 @@ p {
   //============= localization =============
 
   .localization {
-    background: url("../../src/images/vlcsnap-error502 (2).png") center center no-repeat, linear-gradient(51deg, #cb0035 30%, #e06900);
+    background: url("../../src/images/parking3.jpg") center bottom no-repeat, linear-gradient(51deg, #cb0035 30%, #e06900);
     background-size: cover;
     filter: contrast(1.2);
+    width: 100%;
 
     .background {
-      .title-description {
-        padding:  10% 10% 0 10%;
-        font-size: 1.5em;
-        font-weight: bold;
-        opacity: .7;
-        text-align: left;
-      }
+      display: flex;
+      justify-content: flex-end;
+      background: linear-gradient(51deg,rgba(224, 105, 0, 0.7), rgba(203, 0, 53, 0.9) );
 
-      .btn-white {
-        margin: 5%;
+      .container {
+        max-width: 600px;
+
+        .title-description {
+          padding: 10% 10% 0 10%;
+          font-size: 1.3em;
+          //font-weight: bold;
+          letter-spacing: .03em;
+        }
+
+        .btn-white {
+          margin: 5%;
+        }
       }
     }
   }
 
+  //============= map =============
+
+  .map {
+    width: 100%;
+  }
 }
 
