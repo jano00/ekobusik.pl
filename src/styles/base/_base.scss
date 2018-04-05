@@ -3,9 +3,9 @@ body {
   font-family: 'Dekko', cursive;
   font-size: 18px;
   background-color: #eaeaea;
-
-
 }
+
+//============= general =============
 
 hr {
   width: 6em;
@@ -13,10 +13,109 @@ hr {
   display: block;
 }
 
+.btn-white {
+  color: red;
+  background: white;
+  border: 1px solid white;
+  border-radius: 20px;
+  line-height: 1.5em;
+  text-decoration: none;
+  padding: 5px 20px;
+  //margin: 1em;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  z-index: 99;
+
+  &:hover {
+    color: #fff;
+
+    &:before {
+      transform: translateY(50px);
+    }
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(-118deg, #4964a9, #264699);
+    transition: all 0.2s ease-in;
+    z-index: -1;
+  }
+}
+
+.btn {
+  color: white;
+  background: linear-gradient(-118deg, #4964a9, #264699);
+  border: 1px solid white;
+  border-radius: 20px;
+  line-height: 1.5em;
+  text-decoration: none;
+  padding: 5px 20px;
+  margin-top: 10%;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  z-index: 99;
 
 
+  &:hover {
+    color: #fff;
 
+    &:before {
+      transform: scaleX(1);
+    }
+  }
 
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transform: scaleX(0);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(51deg, #cb0035 30%, #e06900);
+    border-radius: 30px;
+    transition: all 0.2s ease-in-out;
+  }
+}
+
+.h1 {
+  font-size: 1.7em;
+  font-weight: bold;
+  color: yellow;
+}
+
+.h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  background: -webkit-linear-gradient(75deg, #cb0035, #e06900);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+p {
+  color: #5e6372;
+  padding-top: 8%;
+  line-height: 1.4em;
+}
+
+.img-box {
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+}
+
+.content-box {
+  padding: 15% 10% 0 10%;
+  height: 400px;
+}
 
 
 //============= header =============
@@ -124,10 +223,7 @@ hr {
       text-align: center;
 
       .h1 {
-        font-size: 1.7em;
-        font-weight: bold;
         padding:  1em 1em 0 1em;
-        color: yellow;
       }
 
       .title-description {
@@ -138,44 +234,14 @@ hr {
       }
 
       p {
-        opacity: 0.6;
+        color: white;
         padding: 3% 10%;
+        opacity: 0.6;
+        line-height: 1.1em;
       }
 
-      .btn {
-        color: red;
-        background: white;
-        border: 1px solid white;
-        border-radius: 20px;
-        line-height: 1.5em;
-        text-decoration: none;
-        padding: 5px 20px;
+      .btn-white {
         margin: 1em;
-        position: relative;
-        overflow: hidden;
-        display: inline-block;
-        z-index: 99;
-
-
-        &:hover {
-          color: #fff;
-
-          &:before {
-            transform: translateY(50px);
-          }
-        }
-
-        &:before {
-          content: "";
-          position: absolute;
-          top: -50px;
-          left: 0;
-          width: 100%;
-          height: 50px;
-          background: linear-gradient(-118deg, #4964a9, #264699);
-          transition: all 0.2s ease-in;
-          z-index: -1;
-        }
       }
     }
   }
@@ -184,68 +250,7 @@ hr {
 
   .individial-clients {
     .img-box {
-      background: url("../../src/images/indywidualni.png");
-      background-size: cover;
-      background-position: center;
-      height: 400px;
-    }
-
-    .content-box {
-      padding: 15% 10% 0 10%;
-      height: 400px;
-
-      .h2 {
-        font-size: 1.5em;
-        font-weight: bold;
-        //letter-spacing: .1em;
-        background: -webkit-linear-gradient(75deg, #cb0035, #e06900);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
-
-      p {
-        padding-top: 8%;
-        color: #5e6372;
-        line-height: 1.4em;
-      }
-
-      .btn {
-        color: white;
-        background: linear-gradient(-118deg, #4964a9, #264699);
-        border: 1px solid white;
-        border-radius: 20px;
-        line-height: 1.5em;
-        text-decoration: none;
-        padding: 5px 20px;
-        margin-top: 10%;
-        position: relative;
-        overflow: hidden;
-        display: inline-block;
-        z-index: 99;
-
-
-        &:hover {
-          color: #fff;
-
-          &:before {
-            transform: scaleX(1);
-          }
-        }
-
-        &:before {
-          content: "";
-          position: absolute;
-          z-index: -1;
-          transform: scaleX(0);
-          top: 0;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          background: linear-gradient(51deg, #cb0035 30%, #e06900);
-          border-radius: 30px;
-          transition: all 0.2s ease-in-out;
-        }
-      }
+      background-image: url("../../src/images/indywidualni.png");
     }
   }
 
