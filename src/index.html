@@ -7,19 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name='description' content='Oferujemy wycieczki pojazdami elektrycznymi z audio-przewodnikiem po Kazimierzu Dolnym i okolicach. Posiadamy ofertę dla grup zorganizowanych, wycieczek oraz osób indywidualnych. Zapraszamy na przejeżdżkę Eko-busikiem!' />
     <meta name='keywords' content='' />
-    <link rel="stylesheet" href="dist/styles/main.css">
+    <link rel="stylesheet" href="../dist/styles/main.css">
     <link href="https://fonts.googleapis.com/css?family=Dekko&amp;subset=latin-ext" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" />
 
 </head>
 <body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v2.12';
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
     <div class="main-container">
 
         <header>
             <div class="background">
 
                 <div class="main-logo">
-                    <a href="#"><img alt="Logo Eko-Busik" src="src/images/logo/logo-long-resized.png"></a>
+                    <a href="#"><img alt="Logo Eko-Busik" src="images/logo/logo-long-resized.png"></a>
                 </div>
                 <ul class="main-nav">
                     <li><a href="">Klienci indywidualni</a></li>
@@ -35,7 +45,7 @@
 
         <section class="main-banner">
             <div class="video-wrap">
-                <video src="src/images/video-lq-500.mp4" <!--autoplay="true" loop="true"-->></video>
+                <video src="images/video-lq-500.mp4" <!--autoplay="true" loop="true"-->></video>
                 <div class="video-txt">
                     <h1>
                         Wycieczki Eko-Busikami z audio-przewodnikiem po Kazimierzu Dolnym i okolicach!
@@ -99,11 +109,11 @@
                     Naszą ofertę kierujemy również do klientów zza granicy. Najciekawsze trasy czerwonych eko-busików są dostępne również z audio-przewodnikiem w językach obcych - angielskim, niemieckim, rosyjskim czy ukraińskim.
                 </p>
                 <div class="flags">
-                    <img src="src/images/flags/002-poland.png">
-                    <img src="src/images/flags/005-united-kingdom.png">
-                    <img src="src/images/flags/004-germany.png">
-                    <img src="src/images/flags/003-russia.png">
-                    <img src="src/images/flags/001-ukraine.png">
+                    <img src="images/flags/002-poland.png">
+                    <img src="images/flags/005-united-kingdom.png">
+                    <img src="images/flags/004-germany.png">
+                    <img src="images/flags/003-russia.png">
+                    <img src="images/flags/001-ukraine.png">
                 </div>
             </div>
         </section>
@@ -123,6 +133,22 @@
         <section class="map">
             <iframe src="https://snazzymaps.com/embed/62391" width="100%" height="400px" style="border:none;"></iframe>
         </section>
+
+        <footer>
+            <div class="background">
+
+                <a href="#"><img src="images/logo/main-logo.png"></a>
+                <div class="contact-footer">
+                    KONTAKT:<br>
+                    Paweł Czopek<br>
+                    tel.: 602 178 024<br>
+                    e-mail: kontakt@ekobusik.pl
+                </div>
+                <!--<div class="fb-wrap">
+                    <div class="fb-page" data-href="https://www.facebook.com/ekobusik" data-width="320" data-small-header="true" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/ekobusik" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/ekobusik">Eko Busik Kazimierz Dolny</a></blockquote></div>
+                </div>-->
+            </div>
+        </footer>
 
     </div>
 </body>
