@@ -111,11 +111,23 @@ p {
   background-position: center;
   height: 400px;
   overflow: hidden;
+
+  @media screen and (min-width: 900px){
+    //flex: 1;
+    height: 442px;
+    width: 50%;
+  }
 }
 
 .content-box {
   padding: 15% 10% 15% 10%;
   min-height: 300px;
+  max-height: 400px;
+
+  @media screen and (min-width: 900px){
+    flex: 1;
+    padding: 100px 50px 0 50px;
+  }
 }
 
 .background {
@@ -138,6 +150,7 @@ p {
     background: url("../../src/images/vlcsnap-error502 (2).png") center bottom no-repeat, linear-gradient(51deg, #cb0035 30%, #e06900);
     background-size: cover;
     filter: contrast(1.2);
+
 
     .background {
       height: 100%;
@@ -167,14 +180,59 @@ p {
 
         li {
           border-top: 1px solid white;
-          transition: font-size 500ms;
+          //transition: font-weight 500ms;
           &:hover {
-            font-size: 1.1em;
+            font-weight: bold;
           }
 
           a {
             text-decoration: none;
             color: white;
+          }
+        }
+      }
+
+      @media screen and (min-width: 700px){
+
+        .main-logo {
+          display: inline-block;
+          padding-bottom: 0;
+        }
+
+        .main-nav {
+          li {
+            display: inline-block;
+
+            border: 0;
+            padding: 0 1%;
+
+            &:last-child {
+              display: none;
+            }
+          }
+        }
+      }
+
+      @media screen and (min-width: 1100px){
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .main-logo {
+          margin: 0;
+          padding: 1em;
+        }
+
+        .main-nav {
+          display: flex;
+          flex-wrap: nowrap;
+
+          li {
+            padding: 0 2%;
+
+            a {
+              white-space: nowrap;
+            }
           }
         }
       }
@@ -225,6 +283,7 @@ p {
     background: url("../../src/images/vlcsnap-error502 (2).png") center bottom no-repeat, linear-gradient(51deg, #cb0035 30%, #e06900);
     background-size: cover;
     filter: contrast(1.2);
+    width: 100%;
 
     .background {
       .h1 {
@@ -240,13 +299,15 @@ p {
 
       p {
         color: white;
-        padding: 3% 10%;
+        padding: 0 10%;
         opacity: 0.6;
         line-height: 1.1em;
+        max-width: 800px;
+        margin: 2% auto;
       }
 
       .btn-white {
-        margin: 1em;
+        margin: 1em 1em 2em 1em;
       }
     }
   }
@@ -257,6 +318,10 @@ p {
     .img-box {
       background-image: url("../../src/images/indywidualni.png");
     }
+
+    @media screen and (min-width: 900px){
+      display: flex;
+    }
   }
 
   //============= groups =============
@@ -265,6 +330,18 @@ p {
     .img-box {
       background-image: url("../../src/images/grupy.png");
       background-position: left;
+    }
+
+    @media screen and (min-width: 900px){
+      display: flex;
+
+      .img-box {
+        order: 2;
+      }
+
+      .content-box {
+        order: 1;
+      }
     }
   }
 
@@ -292,6 +369,10 @@ p {
         margin: 2%;
       }
     }
+
+    @media screen and (min-width: 900px){
+      display: flex;
+    }
   }
 
   //============= localization =============
@@ -301,6 +382,7 @@ p {
     background-size: cover;
     filter: contrast(1.2);
     width: 100%;
+    height: 400px;
 
     .background {
       display: flex;
@@ -308,7 +390,11 @@ p {
       background: linear-gradient(51deg,rgba(224, 105, 0, 0.7), rgba(203, 0, 53, 0.9) );
 
       .container {
-        max-width: 600px;
+        max-width: 800px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
 
         .title-description {
           padding: 10% 10% 0 10%;
