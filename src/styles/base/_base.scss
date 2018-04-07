@@ -1,7 +1,7 @@
 body {
   color: white;
   font-family: 'Dekko', cursive;
-  font-size: 18px;
+  font-size: 19px;
   background-color: #f7f7f7;
 }
 
@@ -13,10 +13,14 @@ hr {
   display: block;
 }
 
+strong {
+  font-weight: bold;
+}
+
 .btn-white {
   color: red;
   background: white;
-  border: 1px solid white;
+  border: 2px solid white;
   border-radius: 20px;
   line-height: 1.5em;
   text-decoration: none;
@@ -43,7 +47,7 @@ hr {
     width: 100%;
     height: 50px;
     background: linear-gradient(-118deg, #4964a9, #264699);
-    transition: all 0.2s ease-in;
+    transition: all 0.1s ease-in;
     z-index: -1;
   }
 }
@@ -111,18 +115,43 @@ p {
   background-position: center;
   height: 400px;
   overflow: hidden;
+  position: relative;
+  filter: contrast(1.1);
+
+
 
   @media screen and (min-width: 900px){
-    //flex: 1;
-    height: 442px;
+    height: 500px;
     width: 50%;
+  }
+
+  @media screen and (min-width: 1000px){
+    &:hover {
+      &:before {
+        opacity: 0;
+        cursor: pointer;
+      }
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      background: linear-gradient(51deg, rgba(203, 0, 53, 0), rgba(224, 105, 0, 0));
+      opacity: 1;
+      transition: opacity 0.5s ease-in;
+    }
   }
 }
 
 .content-box {
   padding: 15% 10% 15% 10%;
   min-height: 300px;
-  max-height: 400px;
+  //max-height: 400px;
 
   @media screen and (min-width: 900px){
     flex: 1;
@@ -135,30 +164,32 @@ p {
   width: 100%;
   background: linear-gradient(51deg, rgba(203, 0, 53, 0.9), rgba(224, 105, 0, 0.9));
   z-index: -1;
-  text-align: center;
+  //text-align: center;
 }
+
+
+
+
+
+
 
 
 //============= header =============
 
 .main-container {
-  display: flex;
-  flex-wrap: wrap;
+  max-width: 1440px;
+  margin: 0 auto;
+  //display: flex;
+  //flex-wrap: wrap;
 
   header {
     width: 100%;
-    background: url("../../src/images/vlcsnap-error502 (2).png") center bottom no-repeat, linear-gradient(51deg, #cb0035 30%, #e06900);
+    background: url("../../src/images/vlcsnap-error502 (2).png") center top no-repeat, linear-gradient(51deg, #cb0035 30%, #e06900);
     background-size: cover;
     filter: contrast(1.2);
 
 
     .background {
-      height: 100%;
-      width: 100%;
-      background: linear-gradient(51deg, rgba(203, 0, 53, 0.9), rgba(224, 105, 0, 0.9));
-      z-index: -1;
-
-
 
       .main-logo {
         max-width: 300px;
@@ -167,7 +198,6 @@ p {
         margin: auto;
 
         a {
-
           img {
             width: 100%;
           }
@@ -180,10 +210,6 @@ p {
 
         li {
           border-top: 1px solid white;
-          //transition: font-weight 500ms;
-          &:hover {
-            font-weight: bold;
-          }
 
           a {
             text-decoration: none;
@@ -193,6 +219,7 @@ p {
       }
 
       @media screen and (min-width: 700px){
+        text-align: center;
 
         .main-logo {
           display: inline-block;
@@ -202,7 +229,6 @@ p {
         .main-nav {
           li {
             display: inline-block;
-
             border: 0;
             padding: 0 1%;
 
@@ -217,21 +243,36 @@ p {
         display: flex;
         justify-content: space-around;
         align-items: center;
+        text-align: initial;
 
         .main-logo {
           margin: 0;
-          padding: 1em;
+          padding: .5em;
         }
 
         .main-nav {
           display: flex;
           flex-wrap: nowrap;
+          justify-content: flex-end;
 
           li {
-            padding: 0 2%;
+            min-width: 165px;
+            padding: 0;
 
-            a {
-              white-space: nowrap;
+              a {
+                padding: 5px 20px;
+                //transition: background 500ms;
+
+                &:hover {
+                  background: white;
+                  border-radius: 20px;
+                  color: #cb0035;
+                }
+              }
+
+
+            &:nth-child(4) {
+              min-width: 60px;
             }
           }
         }
@@ -247,7 +288,7 @@ p {
     .video-wrap {
       position: relative;
       min-height: 300px;
-      height: 30vw;
+      //height: 30vw;
       overflow: hidden;
       display: flex;
       justify-content: center;
@@ -255,7 +296,7 @@ p {
 
       video {
         min-width: 100%;
-        min-height: 100%;
+        min-height: 125%;
         width: auto;
         height: 100%;
         position: absolute;
@@ -266,6 +307,8 @@ p {
       }
 
       .video-txt {
+        display: none;
+        font-size: 1.2em;
         position: absolute;
         left: 10%;
         right: 10%;
@@ -280,27 +323,42 @@ p {
   //============= about =============
 
   .about {
-    background: url("../../src/images/vlcsnap-error502 (2).png") center bottom no-repeat, linear-gradient(51deg, #cb0035 30%, #e06900);
+    background: url("../../src/images/vlcsnap-error502 (2).png") center center no-repeat, linear-gradient(51deg, #cb0035 30%, #e06900);
     background-size: cover;
     filter: contrast(1.2);
     width: 100%;
 
     .background {
+      text-align: center;
+
+      .call-now {
+        padding: 1%;
+        background: linear-gradient(51deg, #cb0035 30%, #e06900);
+        line-height: 1.2em;
+        @media screen and (min-width: 700px){
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+
+        }
+      }
+
       .h1 {
-        padding:  1em 1em 0 1em;
+        padding:  .8em 1em 0 1em;
+        font-size: 2em;
       }
 
       .title-description {
         width: 70%;
         text-align: center;
         font-size: 1.2em;
-        margin: 3% auto;
+        margin: 1% auto;
       }
 
       p {
         color: white;
         padding: 0 10%;
-        opacity: 0.6;
+        opacity: 0.8;
         line-height: 1.1em;
         max-width: 800px;
         margin: 2% auto;
@@ -321,6 +379,14 @@ p {
 
     @media screen and (min-width: 900px){
       display: flex;
+
+      .img-box {
+        order: 2;
+      }
+
+      .content-box {
+        order: 1;
+      }
     }
   }
 
@@ -335,13 +401,7 @@ p {
     @media screen and (min-width: 900px){
       display: flex;
 
-      .img-box {
-        order: 2;
-      }
 
-      .content-box {
-        order: 1;
-      }
     }
   }
 
@@ -360,7 +420,8 @@ p {
       max-width: 310px;
       margin-top: 10%;
       //background: #cb0035;
-      background: linear-gradient(51deg, rgba(224, 105, 0, 0.9), rgba(203, 0, 53, 0.9));
+      background: linear-gradient(-118deg, #4964a9, #264699);
+      //background: linear-gradient(51deg, rgba(224, 105, 0, 0.9), rgba(203, 0, 53, 0.9));
       border-radius: 20px;
       overflow: hidden;
       z-index: -1;
@@ -372,6 +433,14 @@ p {
 
     @media screen and (min-width: 900px){
       display: flex;
+
+      .img-box {
+        order: 2;
+      }
+
+      .content-box {
+        order: 1;
+      }
     }
   }
 
@@ -388,6 +457,7 @@ p {
       display: flex;
       justify-content: flex-end;
       background: linear-gradient(51deg,rgba(224, 105, 0, 0.7), rgba(203, 0, 53, 0.9) );
+      text-align: center;
 
       .container {
         max-width: 800px;
@@ -401,6 +471,7 @@ p {
           font-size: 1.3em;
           //font-weight: bold;
           letter-spacing: .03em;
+          line-height: 1.1em;
         }
 
         .btn-white {
@@ -416,6 +487,64 @@ p {
     width: 100%;
   }
 
+  //============= about us =============
+
+  .about-us {
+    //background: url("../../src/images/logo/eko-busik.png") center bottom no-repeat;
+    //background-size: contain;
+
+
+    .content-box {
+
+      &:first-child {
+        padding-bottom: 0;
+      }
+
+      &:last-child {
+        display: flex;
+        justify-content: center;
+        .fb-page {
+          width: 325px;
+        }
+      }
+    }
+
+    @media screen and (min-width: 900px){
+      display: flex;
+      flex-wrap: wrap;
+
+      .content-box {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 5%;
+        //padding-bottom: 5%;
+
+
+
+        &:first-child {
+          flex: 1.5;
+          padding-bottom: 50px;
+          padding-left: 10%;
+        }
+
+        &:last-child {
+          justify-content: center;
+          align-items: center;
+          padding-bottom: 50px;
+          padding-right: 10%;
+
+        }
+
+        .fb-page {
+          width: 350px;
+        }
+      }
+    }
+
+  }
+
+
+
   //============= footer =============
 
   footer {
@@ -430,6 +559,7 @@ p {
       justify-content: space-around;
       align-items:  center;
       overflow: hidden;
+      //background: linear-gradient(51deg, rgba(203, 0, 53, 0.95), rgba(224, 105, 0, 0.95));
 
       img {
         max-height: 100px;
