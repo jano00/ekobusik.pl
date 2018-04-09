@@ -185,7 +185,7 @@ p {
 
   header {
     width: 100%;
-    background: url("../images/vlcsnap-error502 (2).png") center top no-repeat, linear-gradient(51deg, #cb0035 30%, #e06900);
+    background: url("../images/header-background_mini.jpg") center top no-repeat, linear-gradient(51deg, #cb0035 30%, #e06900);
     background-size: cover;
     filter: contrast(1.2);
 
@@ -368,7 +368,7 @@ p {
   //============= about =============
 
   .about {
-    background: url("../images/vlcsnap-error502 (2).png") center center no-repeat, linear-gradient(51deg, #cb0035 30%, #e06900);
+    background: url("../images/header-background_mini.jpg") center center no-repeat, linear-gradient(51deg, #cb0035 30%, #e06900);
     background-size: cover;
     filter: contrast(1.2);
     width: 100%;
@@ -419,7 +419,7 @@ p {
 
   .individial-clients {
     .img-box {
-      background-image: url("../images/indywidualni.png");
+      background-image: url("../images/indywidualni_mini.jpg");
     }
 
     @media screen and (min-width: 900px){
@@ -439,7 +439,7 @@ p {
 
   .groups {
     .img-box {
-      background-image: url("../images/grupy.png");
+      background-image: url("../images/grupy_mini.jpg");
       background-position: left;
     }
 
@@ -454,7 +454,7 @@ p {
 
   .foreign-customers {
     .img-box {
-      background-image: url("../images/zagraniczni.png");
+      background-image: url("../images/zagraniczni_mini.jpg");
       background-position: right;
     }
 
@@ -492,7 +492,7 @@ p {
   //============= localization =============
 
   .localization {
-    background: url("../images/parking3.jpg") center bottom no-repeat, linear-gradient(51deg, #cb0035 30%, #e06900);
+    background: url("../images/parking_mini.jpg") center bottom no-repeat, linear-gradient(51deg, #cb0035 30%, #e06900);
     background-size: cover;
     filter: contrast(1.2);
     width: 100%;
@@ -593,7 +593,7 @@ p {
   //============= footer =============
 
   footer {
-    background: url("../images/parking3.jpg") center bottom no-repeat, linear-gradient(51deg, #cb0035 30%, #e06900);
+    background: url("../images/parking_mini.jpg") center bottom no-repeat, linear-gradient(51deg, #cb0035 30%, #e06900);
     background-size: cover;
     filter: contrast(1.2);
     width: 100%;
@@ -624,9 +624,6 @@ p {
         padding: 2%;
       }
     }
-
-
-
   }
 }
 
