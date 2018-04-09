@@ -3,6 +3,7 @@ body {
   font-family: 'Dekko', cursive;
   font-size: 19px;
   background-color: #f7f7f7;
+  //background: linear-gradient(51deg, #cb0035 30%, #e06900);
 }
 
 //============= general =============
@@ -177,87 +178,131 @@ p {
 //============= header =============
 
 .main-container {
-  max-width: 1440px;
-  margin: 0 auto;
+  //max-width: 1440px;
+  //margin: 0 auto;
   //display: flex;
   //flex-wrap: wrap;
 
   header {
     width: 100%;
-    background: url("../../src/images/vlcsnap-error502 (2).png") center top no-repeat, linear-gradient(51deg, #cb0035 30%, #e06900);
+    background: url("../images/vlcsnap-error502 (2).png") center top no-repeat, linear-gradient(51deg, #cb0035 30%, #e06900);
     background-size: cover;
     filter: contrast(1.2);
 
 
     .background {
+      .menu {
+        width: 100%;
 
-      .main-logo {
-        max-width: 300px;
-        width: 80%;
-        padding: 1em;
-        margin: auto;
+        .main-logo {
+          max-width: 300px;
+          width: 80%;
+          padding: 1em;
+          margin: auto;
 
-        a {
-          img {
-            width: 100%;
+          a {
+            img {
+              width: 100%;
+            }
+          }
+        }
+
+        .main-nav {
+          text-align: center;
+          line-height: 2.5em;
+
+          li {
+            border-top: 1px solid white;
+
+            a {
+              text-decoration: none;
+              color: white;
+            }
           }
         }
       }
 
-      .main-nav {
-        text-align: center;
-        line-height: 2.5em;
+      .video-wrap {
+        position: relative;
+        min-height: 300px;
+        height: 23vw;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
 
-        li {
-          border-top: 1px solid white;
+        video {
+          min-width: 100%;
+          min-height: 125%;
+          width: auto;
+          height: 100%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
 
-          a {
-            text-decoration: none;
-            color: white;
-          }
+        }
+
+        .video-txt {
+          display: none;
+          font-size: 1.2em;
+          position: absolute;
+          left: 10%;
+          right: 10%;
+          padding: 3%;
+          text-align: center;
+          background-color: rgba(0, 0, 0, 0.5);
+          border-radius: 20px;
         }
       }
 
       @media screen and (min-width: 700px){
         text-align: center;
-
-        .main-logo {
-          display: inline-block;
-          padding-bottom: 0;
-        }
-
-        .main-nav {
-          li {
+        .menu {
+          .main-logo {
             display: inline-block;
-            border: 0;
-            padding: 0 1%;
+            padding-bottom: 0;
+          }
 
-            &:last-child {
-              display: none;
+          .main-nav {
+            li {
+              display: inline-block;
+              border: 0;
+              padding: 0 1%;
+
+              &:last-child {
+                display: none;
+              }
             }
           }
         }
       }
 
       @media screen and (min-width: 1100px){
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        text-align: initial;
-
-        .main-logo {
-          margin: 0;
-          padding: .5em;
-        }
-
-        .main-nav {
+        //display: flex;
+        //flex-wrap: wrap;
+        //text-align: initial;
+        .menu {
           display: flex;
-          flex-wrap: nowrap;
-          justify-content: flex-end;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          align-items: center;
+          text-align: initial;
 
-          li {
-            min-width: 165px;
-            padding: 0;
+          .main-logo {
+            margin: 0;
+            padding: .5em;
+          }
+
+          .main-nav {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: flex-end;
+
+            li {
+              min-width: 165px;
+              padding: 0;
 
               a {
                 padding: 5px 20px;
@@ -270,9 +315,9 @@ p {
                 }
               }
 
-
-            &:nth-child(4) {
-              min-width: 60px;
+              &:nth-child(4) {
+                min-width: 60px;
+              }
             }
           }
         }
@@ -323,7 +368,7 @@ p {
   //============= about =============
 
   .about {
-    background: url("../../src/images/vlcsnap-error502 (2).png") center center no-repeat, linear-gradient(51deg, #cb0035 30%, #e06900);
+    background: url("../images/vlcsnap-error502 (2).png") center center no-repeat, linear-gradient(51deg, #cb0035 30%, #e06900);
     background-size: cover;
     filter: contrast(1.2);
     width: 100%;
@@ -374,7 +419,7 @@ p {
 
   .individial-clients {
     .img-box {
-      background-image: url("../../src/images/indywidualni.png");
+      background-image: url("../images/indywidualni.png");
     }
 
     @media screen and (min-width: 900px){
@@ -394,7 +439,7 @@ p {
 
   .groups {
     .img-box {
-      background-image: url("../../src/images/grupy.png");
+      background-image: url("../images/grupy.png");
       background-position: left;
     }
 
@@ -409,7 +454,7 @@ p {
 
   .foreign-customers {
     .img-box {
-      background-image: url("../../src/images/zagraniczni.png");
+      background-image: url("../images/zagraniczni.png");
       background-position: right;
     }
 
@@ -447,7 +492,7 @@ p {
   //============= localization =============
 
   .localization {
-    background: url("../../src/images/parking3.jpg") center bottom no-repeat, linear-gradient(51deg, #cb0035 30%, #e06900);
+    background: url("../images/parking3.jpg") center bottom no-repeat, linear-gradient(51deg, #cb0035 30%, #e06900);
     background-size: cover;
     filter: contrast(1.2);
     width: 100%;
@@ -490,7 +535,7 @@ p {
   //============= about us =============
 
   .about-us {
-    //background: url("../../src/images/logo/eko-busik.png") center bottom no-repeat;
+    background: url("../images/logo/eko-busik-50.png") left top no-repeat;
     //background-size: contain;
 
 
@@ -548,7 +593,7 @@ p {
   //============= footer =============
 
   footer {
-    background: url("../../src/images/parking3.jpg") center bottom no-repeat, linear-gradient(51deg, #cb0035 30%, #e06900);
+    background: url("../images/parking3.jpg") center bottom no-repeat, linear-gradient(51deg, #cb0035 30%, #e06900);
     background-size: cover;
     filter: contrast(1.2);
     width: 100%;
