@@ -1,0 +1,139 @@
+//============= header =============
+
+header {
+  width: 100%;
+  background: url("../images/header-background_mini.jpg") center top no-repeat, linear-gradient(51deg, #cb0035 30%, #e06900);
+  background-size: cover;
+  filter: contrast(1.2);
+
+
+  .background {
+    .menu {
+      width: 100%;
+
+      .main-logo {
+        max-width: 300px;
+        width: 80%;
+        padding: 1em;
+        margin: auto;
+
+        a {
+          img {
+            width: 100%;
+          }
+        }
+      }
+
+      .main-nav {
+        text-align: center;
+        line-height: 2.5em;
+
+        li {
+          border-top: 1px solid white;
+
+          a {
+            text-decoration: none;
+            color: white;
+          }
+        }
+      }
+    }
+
+    .video-wrap {
+      position: relative;
+      min-height: 300px;
+      height: 23vw;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+
+      video {
+        min-width: 100%;
+        min-height: 125%;
+        width: auto;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+      }
+
+      .video-txt {
+        font-size: 1.2em;
+        position: absolute;
+        left: 10%;
+        right: 10%;
+        padding: 3%;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 20px;
+      }
+    }
+
+    @media screen and (min-width: 700px){
+      text-align: center;
+      .menu {
+        .main-logo {
+          display: inline-block;
+          padding-bottom: 0;
+        }
+
+        .main-nav {
+          li {
+            display: inline-block;
+            border: 0;
+            padding: 0 1%;
+
+            &:last-child {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    @media screen and (min-width: 1100px){
+
+      .menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        text-align: initial;
+
+        .main-logo {
+          margin: 0;
+          padding: .5em;
+        }
+
+        .main-nav {
+          display: flex;
+          flex-wrap: nowrap;
+          justify-content: flex-end;
+
+          li {
+            min-width: 165px;
+            padding: 0;
+
+            a {
+              padding: 5px 20px;
+
+              &:hover {
+                background: white;
+                border-radius: 20px;
+                color: #cb0035;
+              }
+            }
+
+            &:nth-child(4) {
+              min-width: 60px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

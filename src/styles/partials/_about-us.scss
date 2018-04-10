@@ -1,0 +1,48 @@
+//============= about us =============
+
+.about-us {
+  background: url("../images/logo/eko-busik-50.png") left top no-repeat;
+
+  .content-box {
+
+    &:first-child {
+      padding-bottom: 0;
+    }
+
+    &:last-child {
+      display: flex;
+      justify-content: center;
+      .fb-page {
+        width: 325px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 900px){
+    display: flex;
+    flex-wrap: wrap;
+
+    .content-box {
+      display: flex;
+      flex-wrap: wrap;
+      padding-top: 5%;
+
+      &:first-child {
+        flex: 1.5;
+        padding-bottom: 50px;
+        padding-left: 10%;
+      }
+
+      &:last-child {
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 50px;
+        padding-right: 10%;
+      }
+
+      .fb-page {
+        width: 350px;
+      }
+    }
+  }
+}
