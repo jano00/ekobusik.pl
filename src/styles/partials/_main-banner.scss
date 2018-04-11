@@ -1,6 +1,6 @@
-//============= about =============
+//============= main banner =============
 
-.about {
+.main-banner {
   background: url("../images/header-background_mini.jpg") center center no-repeat, linear-gradient(51deg, #cb0035 30%, #e06900);
   background-size: cover;
   filter: contrast(1.2);
@@ -8,18 +8,6 @@
 
   .background {
     text-align: center;
-
-    .call-now {
-      padding: 1%;
-      background: linear-gradient(51deg, #cb0035 30%, #e06900);
-      line-height: 1.2em;
-
-      @media screen and (min-width: 700px){
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-      }
-    }
 
     .h1 {
       padding:  .8em 1em 0 1em;
@@ -35,17 +23,18 @@
 
     p {
       color: white;
-      padding: 0 10%;
+      padding: 5% 10%;
       opacity: 0.8;
       line-height: 1.1em;
       max-width: 800px;
       margin: 2% auto;
     }
 
+    @media screen and (min-width: 700px) {
 
-
-    .btn-white {
-      margin: 1em 1em 2em 1em;
+      p {
+        padding: 1em 10%;
+      }
     }
   }
 }
