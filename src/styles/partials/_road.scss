@@ -28,6 +28,7 @@
     background-size: cover;
     filter: contrast(1.2);
     width: 100%;
+    font-size: 1.05em;
 
     .background {
       display: flex;
@@ -41,15 +42,16 @@
         padding: 2%;
 
         &:first-child {
-          width: 200px;
+          width: 210px;
         }
 
         &:last-child {
-          width: 100px;
+          width: 120px;
 
           div {
             &:first-child {
               text-transform: uppercase;
+              font-weight: 800;
             }
           }
         }
@@ -62,7 +64,6 @@
     flex-wrap: wrap;
 
     .img-box {
-
       .map {
         max-width: initial;
         height: auto;
@@ -79,14 +80,35 @@
 
     .road-info {
       .background {
+        justify-content: space-between;
 
         .wrap {
+          flex: 2;
+          flex-wrap: nowrap;
+          justify-content: space-around;
 
           div {
+
+          }
+
+          &:last-child {
+            flex:1;
+            background: linear-gradient(51deg, rgba(203, 0, 53, 0.5) 30%, #e06900);
+            border-radius: 50px;
 
           }
         }
       }
     }
+  }
+}
+
+//============== road - map on the left========
+
+.road-left {
+  @extend .road;
+
+  .img-box {
+    order: -1;
   }
 }
