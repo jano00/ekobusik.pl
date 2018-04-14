@@ -94,7 +94,7 @@
           &:last-child {
             flex:1;
             background: linear-gradient(51deg, rgba(203, 0, 53, 0.5) 30%, #e06900);
-            border-radius: 50px;
+            border-radius: 50px 0 0 50px;
 
           }
         }
