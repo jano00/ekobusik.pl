@@ -141,7 +141,7 @@
                 Trasa "Z Albrechtówką"
             </h3>
             <p>
-                Dwugodzinną trasę dla najbardziej wytrwałych zaczynamy na Dużym Rynku, następnie udajemy się na promenadę nadwiślaną dojeżdżając aleją Kazimierza Wielkiego aż do ostatniego spichlerza "Pod Żurwaniem". Poznawszy historię kazimierskich spichlerzy, ulicą Puławską wjeżdżamy spowrotem do miasteczka. Jedziemy wzłóż rzeki Grodarz z widokiem na renesansowe kamienice, kazimierskie kościoły i Górę Trzech Krzyży. Dalej doliną Grodarza obok najstarszej chaty na lubelszczyźnie dojeżdżamy do jednego z najpiękniejszych kazimierskich wąwozów lessowych, gdzie czeka nas 15-minutowy spacer pomiędzy korzeniami drzew.<br><br>
+                Dwugodzinną trasę dla najbardziej wytrwałych zaczynamy na Dużym Rynku, następnie udajemy się na promenadę nadwiślaną dojeżdżając aleją Kazimierza Wielkiego aż do ostatniego spichlerza "Pod Żurwaniem". Poznawszy historię kazimierskich spichlerzy, ulicą Puławską wjeżdżamy spowrotem do miasteczka. Jedziemy wzłóż rzeki Grodarz z widokiem na renesansowe kamienice, kazimierskie kościoły i Górę Trzech Krzyży. Dalej doliną Grodarza obok najstarszej chaty na lubelszczyźnie dojeżdżamy do wąwozu Korzeniowy Dół, gdzie czeka nas 15-minutowy spacer.<br><br>
                 Wracając z Wąwozu, skręcamy w malowniczą uliczkę Szkolną. Zobaczymy tam m.in. dom jednego z najznakomitrzych polskich architektów - Stefana Kuryłowicza, a także najstarszy pensjonat w Kazimierzu, czy willę słynnego okulisty profesora Krwawicza.<br><br>
                 Następnie skręcamy w ulicę Czerniawy położoną na dnie wąwozu. Uderzenie chłodnego powietrza nie jest przypadkowe bowiem zbliżamy się do miejsca zagłady. 10-minutowy postój umożliwia podejście do charakterystycznego pomnika wzorowanego na jerozolimskiej Ścianie Płaczu.<br><br>
                 Wysłuchawszy historii miasteczka opuszczamy jego granice i udajemy się z Eko-Busikami na Albrechtówkę. Po minucie spaceru wąską ścieżką wśród gęstych zarośli, naszym oczom ukazuje się zapierający dech w piersiach widok na Małopolski Przełom Wisły oraz położone na drugim brzegu ruiny zamku w Janowcu.
@@ -205,19 +205,27 @@
                         </div>
                     </div>
                     <div class="logo-2">
-                        <img src="images/logo/main-logo.png">
+                        <img src="images/logo/eko-busik-team.png">
                     </div>
                 </div>
             </div>
         </div>
         <div class="content-box">
             <form action="send.php" method="POST">
-                <input type="text" class="form"  name="client" placeholder="Imię i nazwisko" required>
-                <input type="text" class="form"  name="telephone" placeholder="Telefon" required>
-                <input type="email" class="form wide"  name="email" placeholder="Twój adres e-mail" required>
-                <input type="datetime-local" class="form"  name="date" placeholder="Data wycieczki" required>
-                <input type="text" class="form"  name="person" placeholder="Liczba osób" required>
-                <textarea class="form wide" rows="5"  name="message"  placeholder="Wiadomość" required></textarea>
+                <input type="text" class="form"  name="client" placeholder="Imię i nazwisko*" required>
+                <input type="text" class="form"  name="telephone" placeholder="Telefon*" required>
+                <input type="email" class="form"  name="email" placeholder="Twój adres e-mail*" required>
+                <select class="form" name="road">
+                    <option value="">Wybierz trasę</option>
+                    <option value="'Ze Spichlerzami'">Trasa "Ze Spichlerzami"</option>
+                    <option value="'Z Kirkutem'">Trasa "Z Kirkutem"</option>
+                    <option value="pełnej 'B'">Pełna Trasa "B"</option>
+                    <option value="'Z Albrechtówką'">Trasa "Z Albrechtówką"</option>
+                    <option value="'Zlecenie nietypowe'">Nietypowe zlecenie :)</option>
+                </select>
+                <input type="text" class="form"  name="person" placeholder="Liczba osób">
+                <input type="datetime-local" class="form"  name="date" placeholder="Data wycieczki">
+                <textarea class="form wide" rows="5"  name="message"  placeholder="Wiadomość*" required></textarea>
                 <input class="btn" type="submit" value="Wyślij wiadomość">
             </form>
         </div>
@@ -229,24 +237,6 @@
 
             <div class="contact-footer">
                 Wszystkie prawa zastrzeżone &copy;
-            </div>
-
-            <div class="contact-footer">
-
-                <strong>KONTAKT:</strong><br>
-                <div class="txt">
-                    <img class="icon" src="images/icons/user.png">Paweł Czopek
-                </div>
-
-                <div class="txt">
-                    <a href="tel: +48602178024">
-                        <img class="icon" src="images/icons/phone.png">602 178 024</a>
-                </div>
-
-                <div class="txt">
-                    <a href="mailto:kontakt@ekobusik.pl">
-                        <img class="icon" src="images/icons/email.png">kontakt@ekobusik.pl</a>
-                </div>
             </div>
 
             <div class="contact-footer">

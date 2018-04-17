@@ -31,7 +31,7 @@
                 </div>
                 <ul class="main-nav">
                     <li><a href="">Klienci indywidualni</a></li>
-                    <li><a href="">Grupy zorganizowane</a></li>
+                    <li><a href="grupy-zorganizowane.html">Grupy zorganizowane</a></li>
                     <li><a href="">Nocne zwiedzanie</a></li>
                     <!--<li><a href="https://dronamic.pl">Filmowanie dronem</a></li>-->
                     <li><a href="">Kontakt</a></li>
@@ -104,7 +104,7 @@
             <p>
                 Dla grup zorganizowanych przygotowalismy specjlane trasy (w tym najdłuższą trwającą 2 godziny!), a także wyjątkowo korzystne ceny. Dla wycieczek szkolnych i maluchów proponujemy też specjalnego audio-przewodnika w formie opowiadania, gdzie w role przewodnika wciela się kazimierski kogucik :D
             </p>
-            <a class="btn" href="grupy-zorganizowane/grupy-zorganizowane.html">Trasy dla grup</a>
+            <a class="btn" href="grupy-zorganizowane.html">Trasy dla grup</a>
         </div>
     </section>
 
