@@ -12,9 +12,21 @@
     &:last-child {
       display: flex;
       justify-content: center;
+
       .fb-page {
         width: 325px;
+        background: linear-gradient(51deg, rgba(224, 105, 0, 0.8), rgba(203, 0, 53, 0.9));
+        padding: 10px;
+        border-radius: 5px;
       }
+    }
+
+    hr {
+      display: inline-block;
+      background: rgba(203,0,53,0.9);
+      height: 2px;
+      width: 50%;
+      margin: 1em 50% 1em 0;
     }
   }
 

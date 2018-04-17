@@ -5,7 +5,11 @@
 
   .content-box {
     flex: 1;
-    padding-bottom: 50px;
+    padding-bottom: 0;
+
+    @media screen and (min-width: 875px){
+      padding-bottom: 50px;
+    }
 
     hr {
       display: inline-block;
@@ -98,6 +102,12 @@
       .btn {
         @extend .form;
         border: 2px solid white;
+        margin-bottom: 10%;
+
+        @media screen and (min-width: 875px) {
+          margin-bottom: 0;
+        }
+
         @media screen and (min-width: 950px) {
           width: 94%;
         }
