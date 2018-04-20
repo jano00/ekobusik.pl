@@ -59,18 +59,25 @@ header {
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
+      }
+
+      .caption {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding: .5% 1%;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.6);
+        cursor: pointer;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity .2s, visibility .2s;
 
       }
 
-      .video-txt {
-        font-size: 1.2em;
-        position: absolute;
-        left: 10%;
-        right: 10%;
-        padding: 3%;
-        text-align: center;
-        background-color: rgba(0, 0, 0, 0.5);
-        border-radius: 20px;
+      &:hover .caption {
+        visibility: visible;
+        opacity: 1;
       }
     }
 
