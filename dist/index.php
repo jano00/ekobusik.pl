@@ -27,7 +27,7 @@
         <div class="background">
             <div class="menu">
                 <div class="main-logo">
-                    <a href="#"><img alt="Logo Eko-Busik" src="images/logo/logo-long-resized.png"></a>
+                    <a href="http://ekobusik.pl"><img alt="Logo Eko-Busik" src="images/logo/logo-long-resized.png"></a>
                 </div>
                 <ul class="main-nav">
                     <li><a href="">Klienci indywidualni</a></li>
