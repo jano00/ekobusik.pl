@@ -1,0 +1,52 @@
+
+
+.price {
+  .content-box {
+
+    .h2 {
+      margin-bottom: 5%;
+    }
+
+
+    .call {
+      border-radius: 20px;
+      padding: 1% 2%;
+      line-height: 2em;
+      margin: 3em auto 1em auto;
+      max-width: 350px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(-118deg, #4964a9, #264699);
+
+      a {
+        display: flex;
+        align-items: center;
+        width: 160px;
+
+        .icon {
+          top: 0;
+        }
+      }
+    }
+  }
+
+  .img-box {
+    background: url("../../images/nocne-korzen2.jpg") center bottom no-repeat;
+    background-size: cover;
+  }
+
+
+  @media screen and (min-width: 900px){
+    display: flex;
+
+    .img-box {
+      order: 1;
+    }
+
+    .content-box {
+      order: 2;
+    }
+  }
+}

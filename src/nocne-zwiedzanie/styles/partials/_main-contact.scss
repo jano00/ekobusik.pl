@@ -1,0 +1,160 @@
+.main-contact {
+  background: url("../images/parking2_mini.jpg") center top no-repeat, linear-gradient(51deg, #cb0035 30%, #e06900);
+  background-size: cover;
+
+  .background {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .content-box {
+      flex: 1;
+      padding-bottom: 0;
+
+      @media screen and (min-width: 875px) {
+        padding-bottom: 50px;
+      }
+
+      hr {
+        display: inline-block;
+        background: yellow;
+        height: 2px;
+        width: 50%;
+        border-color: yellow;
+      }
+
+      .title-description {
+        font-size: 1.1em;
+        letter-spacing: .03em;
+        line-height: 1.1em;
+        padding: 1% 0 8% 0;
+      }
+
+      p {
+        padding: 0 0 10% 0;
+        color: white;
+      }
+
+      .info-box {
+        background: url("../images/opis-croped2.jpg") center top no-repeat, linear-gradient(51deg, #cb0035 30%, #e06900);
+        background-size: cover;
+        border-radius: 50px;
+
+        .background {
+          background: linear-gradient(51deg, rgba(224, 105, 0, 0.8), rgba(203, 0, 53, 0.9));
+          border-radius: 50px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+
+          .box {
+            width: 260px;
+
+            .txt {
+              padding: 1% 6%;
+              line-height: 32px;
+              font-weight: 800;
+
+              a {
+                text-decoration: none;
+                color: white;
+              }
+            }
+          }
+
+          .logo-2 {
+            padding: 3% 3% 3% 0;
+            max-height: 120px;
+            width: 160px;
+
+            img {
+              height: 100%;
+            }
+
+            @media screen and (max-width: 1085px) {
+              display: none;
+            }
+          }
+        }
+      }
+
+      .adress {
+        font-family: "Courier New";
+        padding: 10% 0 0 0;
+
+
+        @media screen and (min-width: 836px) {
+          padding: 10% 10% 0 10%;
+          text-align: center;
+        }
+
+      }
+
+      form {
+        padding: 0 0 5% 0;
+        display: flex;
+        flex-wrap: wrap;
+
+        .form {
+          border-radius: 20px;
+          border: 1px solid white;
+          padding: .5em;
+          margin: 1% .5%;
+          font-family: 'Dekko', cursive;
+          font-size: 19px;
+          width: 100%;
+
+          @media screen and (min-width: 950px) {
+            width: 42.5%;
+          }
+
+          &:nth-child(4) {
+
+            @media screen and (min-width: 950px) {
+              width: 46%;
+            }
+          }
+        }
+
+        .wide {
+          @media screen and (min-width: 950px) {
+            width: 90%;
+          }
+        }
+
+        .btn {
+          @extend .form;
+          border: 2px solid white;
+          margin-bottom: 10%;
+
+          @media screen and (min-width: 875px) {
+            margin-bottom: 0;
+          }
+
+          @media screen and (min-width: 950px) {
+            width: 94%;
+          }
+        }
+      }
+
+      .parking {
+        text-align: center;
+        font-size: 1.5em;
+        font-weight: 800;
+        text-transform: uppercase;
+        padding-top: 7%;
+        color: yellow;
+        letter-spacing: .2em;
+        line-height: 1.2em;
+
+        .arrows {
+          img {
+            margin: 20px 50px 0 50px;
+          }
+        }
+      }
+    }
+  }
+}
+
+

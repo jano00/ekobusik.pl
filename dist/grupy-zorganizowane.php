@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117984887-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-117984887-1');
+    </script>
+
+
     <meta charset="UTF-8">
     <title>Grupy Zorganizowane - Zwiedzaj z Nami Eko-Busikami</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -45,7 +56,7 @@
                 </ul>
             </div>
             <div class="video-wrap">
-                <img src="images/dronamic-kazimierz.jpg">
+                <img src="images/dronamic-kazimierz_mini.jpg">
                 <div class="caption">
                     <div>
                         fot. dronamic.pl
@@ -76,8 +87,8 @@
             <h3 class="h2">
                 Trasa "Ze Spichlerzami"
             </h3>
-            <p>Trasę polecamy w szczególności dla dzieci i młodzieży szkolnej :)<br><br>
-                Punktem docelowym wycieczki jest wąwóz Korzeniowy Dół. Zaczynamy na Dużym Rynku, następnie udajemy się na promenadę nadwiślaną, gdzie zobaczymy najpiękniejsze kazimierskie spichlerze. Kolejny punkt to przejazd przez centrum miasteczka, wzłóż rzeki Grodarz z widokiem na renesansową kamienicę celejowską, klasztor franciszkanów reformatów, jatki koszerne i Górę Trzech Krzyży. Dalej doliną Grodarza obok najstarszej (niemal trzystuletniej) chaty na lubelszczyźnie, dojeżdżamy do jednego z najpiękniejszych kazimierskich wąwozów, gdzie czeka nas 20-minutowy spacer. W drodze powrotnej przejeżdżamy ulicą Lubelską prosto na Duży Rynek.
+            <p>Trasę polecamy w szczególności dla dzieci i młodzieży szkolnej ze względu na dłuższą jazdę Eko-Busikiem :D<br><br>
+                Punktem docelowym wycieczki jest wąwóz Korzeniowy Dół. Zaczynamy na Dużym Rynku, następnie udajemy się na promenadę nadwiślaną, gdzie zobaczymy najpiękniejsze kazimierskie spichlerze. Kolejny punkt to przejazd przez centrum miasteczka, wzłuż rzeki Grodarz z widokiem na renesansową kamienicę Celejowską, klasztor franciszkanów reformatów, jatki koszerne i Górę Trzech Krzyży. Dalej doliną Grodarza obok najstarszej (niemal trzystuletniej) chaty na Lubelszczyźnie, dojeżdżamy do jednego z najpiękniejszych kazimierskich wąwozów, gdzie czeka nas 20-minutowy spacer. W drodze powrotnej przejeżdżamy ulicą Lubelską prosto na Duży Rynek.
             </p>
         </div>
         <div class="img-box">
@@ -105,8 +116,8 @@
                 Trasa "Z Kirkutem"
             </h3>
             <p>
-                Punktem docelowym wycieczki jest wąwóz Korzeniowy Dół jednak po drodze zatrzymujemy się jeszcze na cmentarzu żydowskim, dlatego trasę szczególnie polecamy dla dorosłych oraz młodzieży.<br><br>
-                Przejażdżkę zaczynamy na Dużym Rynku, następnie udajemy się głównymi ulicami miasteczka, wzłóż rzeki Grodarz z widokiem na renesansową kamienicę celejowską, klasztor franciszkanów reformatów, jatki koszerne i Górę Trzech Krzyży. Następnie skręcamy w ulicę Czerniawy położoną na dnie wąwozu. Uderzenie chłodnego powietrza nie jest przypadkowe bowiem zbliżamy się do miejsca zagłady. 10-minutowy postój umożliwia podejście do charakterystycznego pomnika wzorowanego na jerozolimskiej Ścianie Płaczu. Wracając do szkrzyżowania skręcamy w dolinę Grodarza. Przejeżdżając obok najstarszej (niemal trzystuletniej) chaty na lubelszczyźnie dojeżdżamy do jednego z najpiękniejszych kazimierskich wąwozów gdzie czeka nas 20-minutowy spacer. W drodze powrotnej przejeżdżamy ulicą Lubelską prosto na Duży Rynek.
+                Punktem docelowym wycieczki jest wąwóz Korzeniowy Dół, jednak po drodze zatrzymujemy się jeszcze na cmentarzu żydowskim, dlatego trasę szczególnie polecamy dla dorosłych oraz młodzieży.<br><br>
+                Przejażdżkę zaczynamy na Dużym Rynku, następnie udajemy się głównymi ulicami miasteczka, wzłóż rzeki Grodarz z widokiem na renesansową kamienicę Celejowską, klasztor franciszkanów reformatów, jatki koszerne i Górę Trzech Krzyży. Następnie skręcamy w ulicę Czerniawy położoną na dnie wąwozu. Uderzenie chłodnego powietrza nie jest przypadkowe, ponieważ zbliżamy się do miejsca zagłady. 10-minutowy postój umożliwia podejście do charakterystycznego pomnika wzorowanego na jerozolimskiej Ścianie Płaczu. Wracając do skrzyżowania skręcamy w dolinę Grodarza. Przejeżdżając obok najstarszej (niemal trzystuletniej) chaty na Lubelszczyźnie dojeżdżamy do jednego z najpiękniejszych kazimierskich wąwozów gdzie czeka nas 20-minutowy spacer. W drodze powrotnej przejeżdżamy ulicą Lubelską prosto na Duży Rynek.
 
             </p>
         </div>
@@ -136,9 +147,9 @@
             </h3>
             <p>
                 Pełna trasa "B" to połączenie obydwu poprzednich tras ;)<br><br>
-                Tradycyjnie wycieczkę zaczynamy z parkingu Eko-Busików na Dużym Rynku, następnie udajemy się na promenadę nadwiślaną i dojeżdżamy aleją Kazimierza Wielkiego aż do ostatniego spichlerza "Pod Żurwaniem". Wracając ulicą Puławską wjeżdżamy spowrotem do miasteczka i wzłóż rzeki Grodarz, mijając najważniejsze zabytki centrum miasteczka, udajemy się na cmentaż żydowski - Kirkut, gdzie zatrzymujemy się na dłuższą chwilę aby zobaczyć z bliska kazimierską Ścianę Płaczu. <br><br>
-                Dalej doliną Grodarza obok najstarszej chaty na lubelszczyźnie dojeżdżamy do jednego z najpiękniejszych kazimierskich wąwozów - Korzeniowego Dołu. Tam czeka nas 15-minutowy spacer pomiędzy korzeniami drzew.<br><br>
-                W drodze powrotnej skręcamy w malowniczą uliczkę Szkolną, gdzie zobaczymy m.in. dom jednego z najznakomitrzych polskich architektów - Stefana Kuryłowicza, a także najstarszy pensjonat w Kazimierzu, czy willę słynnego okulisty, profesora Krwawicza.
+                Tradycyjnie wycieczkę zaczynamy z parkingu Eko-Busików na Dużym Rynku, następnie udajemy się na promenadę nadwiślaną i dojeżdżamy aleją Kazimierza Wielkiego aż do ostatniego spichlerza "Pod Żurawiem". Wracając ulicą Puławską wjeżdżamy spowrotem do miasteczka i wzłuż rzeki Grodarz, mijając najważniejsze zabytki centrum miasteczka, udajemy się na cmentarz żydowski — Kirkut, gdzie zatrzymujemy się na dłuższą chwilę aby zobaczyć z bliska kazimierską Ścianę Płaczu. <br><br>
+                Dalej doliną Grodarza obok najstarszej chaty na lubelszczyźnie dojeżdżamy do jednego z najpiękniejszych kazimierskich wąwozów — Korzeniowego Dołu. Tam czeka nas 15-minutowy spacer pomiędzy korzeniami drzew.<br><br>
+                W drodze powrotnej skręcamy w malowniczą uliczkę Szkolną, gdzie zobaczymy m.in. dom jednego z najznakomitszych polskich architektów — Stefana Kuryłowicza, a także najstarszy pensjonat w Kazimierzu, czy willę słynnego okulisty, profesora Krwawicza.
             </p>
         </div>
         <div class="img-box">
@@ -166,10 +177,10 @@
                 Trasa "Z Albrechtówką"
             </h3>
             <p>
-                Dwugodzinną trasę dla najbardziej wytrwałych zaczynamy na Dużym Rynku, następnie udajemy się na promenadę nadwiślaną dojeżdżając aleją Kazimierza Wielkiego aż do ostatniego spichlerza "Pod Żurwaniem". Poznawszy historię kazimierskich spichlerzy, ulicą Puławską wjeżdżamy spowrotem do miasteczka. Jedziemy wzłóż rzeki Grodarz z widokiem na renesansowe kamienice, kazimierskie kościoły i Górę Trzech Krzyży. Dalej doliną Grodarza obok najstarszej chaty na lubelszczyźnie dojeżdżamy do wąwozu Korzeniowy Dół, gdzie czeka nas 15-minutowy spacer.<br><br>
-                Wracając z Wąwozu, skręcamy w malowniczą uliczkę Szkolną. Zobaczymy tam m.in. dom jednego z najznakomitrzych polskich architektów - Stefana Kuryłowicza, a także najstarszy pensjonat w Kazimierzu, czy willę słynnego okulisty profesora Krwawicza.<br><br>
-                Następnie skręcamy w ulicę Czerniawy położoną na dnie wąwozu. Uderzenie chłodnego powietrza nie jest przypadkowe bowiem zbliżamy się do miejsca zagłady. 10-minutowy postój umożliwia podejście do charakterystycznego pomnika wzorowanego na jerozolimskiej Ścianie Płaczu.<br><br>
-                Wysłuchawszy historii miasteczka opuszczamy jego granice i udajemy się z Eko-Busikami na Albrechtówkę. Po minucie spaceru wąską ścieżką wśród gęstych zarośli, naszym oczom ukazuje się zapierający dech w piersiach widok na Małopolski Przełom Wisły oraz położone na drugim brzegu ruiny zamku w Janowcu.
+                Dwugodzinną trasę dla najwytrwalszych zaczynamy na Dużym Rynku, następnie udajemy się na promenadę nadwiślaną dojeżdżając aleją Kazimierza Wielkiego aż do ostatniego spichlerza "Pod Żurawiem". Poznawszy historię kazimierskich spichlerzy, ulicą Puławską wjeżdżamy z powrotem do miasteczka. Jedziemy wzłuż rzeki Grodarz z widokiem na renesansowe kamienice, kazimierskie kościoły i Górę Trzech Krzyży. Dalej doliną Grodarza obok najstarszej chaty na Lubelszczyźnie dojeżdżamy do wąwozu Korzeniowy Dół, gdzie czeka nas 15-minutowy spacer.<br><br>
+                Wracając z Wąwozu, skręcamy w malowniczą uliczkę Szkolną. Zobaczymy tam m.in. dom architekta Stefana Kuryłowicza, a także najstarszy pensjonat w Kazimierzu, czy willę słynnego okulisty profesora Krwawicza.<br><br>
+                Następnie skręcamy w ulicę Czerniawy położoną na dnie wąwozu. Uderzenie chłodnego powietrza nie jest przypadkowe, bo zbliżamy się do miejsca zagłady. 10-minutowy postój umożliwia podejście do charakterystycznego pomnika wzorowanego na jerozolimskiej Ścianie Płaczu.<br><br>
+                Wysłuchawszy historii miasteczka, opuszczamy jego granice i udajemy się z Eko-Busikami na Albrechtówkę. Po minucie spaceru wąską ścieżką wśród gęstych zarośli, naszym oczom ukazuje się zapierający dech w piersiach widok na Małopolski Przełom Wisły oraz położone na drugim brzegu ruiny zamku w Janowcu.
 
             </p>
         </div>
@@ -196,7 +207,7 @@
         <div class="background">
             <div class="container">
                 <div class="title-description">
-                    <strong>Każdą z tras kończymy na rynku lub odwozimy Państwa na parking dla autokarów.</strong> <br><br> Możemy również zamówić dla Państwa <strong class="yellow">KAZIMIERSKIE KOGUTY!</strong> - tradycyjny regionalny wyrób z ciasta z najstarszej piekarni w Kazimierzu :) Koguty w cenie 5 zł (duży) 4 zł (mały). Dostawa do autokaru bez dodatkowych opłat.
+                    <strong>Każdą z tras kończymy na rynku lub odwozimy Państwa na parking dla autokarów.</strong> <br><br> Możemy również zamówić dla Państwa <strong class="yellow">KAZIMIERSKIE KOGUTY!</strong> - tradycyjny, regionalny, wyrób z ciasta z najstarszej piekarni w Kazimierzu :) Koguty w cenie 5 zł (duży) 4 zł (mały). Dostawa do autokaru bez dodatkowych opłat.
                 </div>
             </div>
         </div>
@@ -212,7 +223,7 @@
                 <strong>Zainteresowała Cię nasza oferta? Masz pytania? Nie wahaj się, zarezerwuj termin dla swojej grupy już teraz!</strong>
             </div>
             <p>
-                Zadzwoń bezpośrenio do nas lub złóż rezerwację na bardziej odległy termin poprzez formularz kontaktowy :)
+                Zadzwoń bezpośrednio do nas lub złóż rezerwację na bardziej odległy termin poprzez formularz kontaktowy :)
             </p>
             <div class="info-box">
                 <div class="background">

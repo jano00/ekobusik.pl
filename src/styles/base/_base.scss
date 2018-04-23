@@ -1,7 +1,7 @@
 body {
   color: white;
   font-family: 'Dekko', cursive;
-  font-size: 19px;
+  font-size: 18px;
   background-color: #f7f7f7;
 }
 
@@ -100,6 +100,7 @@ strong {
   overflow: hidden;
   display: inline-block;
   z-index: 99;
+  cursor: pointer;
 
   &:hover {
     color: #fff;

@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117984887-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-117984887-1');
+    </script>
+
+
     <meta charset="UTF-8">
     <title>Kontakt - Zwiedzaj z Nami Eko-Busikami</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -58,7 +69,7 @@
                 <strong>Zainteresowała Cię nasza oferta? Masz pytania? Napisz do nas!</strong>
             </div>
             <p>
-                Jeśli jesteś klientem indywidualnym zapraszamy prosto na nasz parking. Jeśli poszukujesz wycieczki dla grupy zorganizowanej, zadzwoń do nas teraz lub złóż rezerwację na bardziej odległy termin poprzez formularz kontaktowy :)
+                Jeśli jesteś klientem indywidualnym, zapraszamy prosto na nasz parking. Jeśli poszukujesz wycieczki dla grupy zorganizowanej, zadzwoń do nas teraz lub złóż rezerwację na bardziej odległy termin poprzez formularz kontaktowy :)
             </p>
             <div class="info-box">
                 <div class="background">
@@ -90,7 +101,7 @@
             </div>
         </div>
         <div class="content-box">
-            <h3 class="h1">Formularz kontaktowy</h3>
+            <h3 class="h1">Formularz kontaktowy:</h3>
             <hr>
 
             <form action="send.php" method="POST">

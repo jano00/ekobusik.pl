@@ -1,0 +1,114 @@
+.road {
+
+  .img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: initial;
+
+    .map {
+      max-width: 400px;
+    }
+  }
+
+  .content-box {
+    padding: 1.5em 10%;
+
+    .h2 {
+      padding: 5% 0;
+    }
+
+    p {
+      padding-top: 0;
+    }
+  }
+
+  .road-info {
+    background: url("../images/header-background_mini.jpg") center center no-repeat, linear-gradient(51deg, #cb0035 30%, #e06900);
+    background-size: cover;
+    filter: contrast(1.2);
+    width: 100%;
+    font-size: 1.05em;
+
+    .background {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+      .wrap {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+        padding: 2%;
+
+        &:first-child {
+          width: 210px;
+        }
+
+        &:last-child {
+          width: 120px;
+
+          div {
+            &:first-child {
+              text-transform: uppercase;
+              font-weight: 800;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 900px){
+    display: flex;
+    flex-wrap: wrap;
+
+    .img-box {
+      .map {
+        max-width: initial;
+        height: auto;
+        width: 100%;
+      }
+    }
+
+    .content-box {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+      padding: 1% 5% 2% 5%;
+    }
+
+    .road-info {
+      .background {
+        justify-content: space-between;
+
+        .wrap {
+          flex: 2;
+          flex-wrap: nowrap;
+          justify-content: space-around;
+
+          div {
+
+          }
+
+          &:last-child {
+            flex:1;
+            background: linear-gradient(51deg, rgba(203, 0, 53, 0.5) 30%, #e06900);
+            border-radius: 50px 0 0 50px;
+
+          }
+        }
+      }
+    }
+  }
+}
+
+//============== road - map on the left========
+
+.road-left {
+  @extend .road;
+
+  .img-box {
+    order: -1;
+  }
+}

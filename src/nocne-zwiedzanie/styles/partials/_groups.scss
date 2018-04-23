@@ -1,0 +1,12 @@
+//============= groups =============
+
+.groups {
+  .img-box {
+    background-image: url("../images/grupy_mini.jpg");
+    background-position: left;
+  }
+
+  @media screen and (min-width: 900px){
+    display: flex;
+  }
+}

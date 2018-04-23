@@ -1,0 +1,12 @@
+.add {
+  @extend .localization;
+
+  background: url("../images/opis-croped_mini.jpg") center top no-repeat, linear-gradient(51deg, #cb0035 30%, #e06900);
+  background-size: cover;
+
+
+  .background {
+    background: linear-gradient(51deg, rgba(224, 105, 0, 0.7), rgba(203, 0, 53, 0.9));
+    text-align: center;
+  }
+}

@@ -8,7 +8,7 @@ var plumber = require('gulp-plumber');
 var notify = require('gulp-notify');
 
 gulp.task('sass', function() {
-    gulp.src('src/**/*.scss')
+    gulp.src('src/**/**/*.scss')
         .pipe(plumber({ errorHandler: function(err) {
                 notify.onError({
                     title: "Gulp error in " + err.plugin,
@@ -30,7 +30,7 @@ gulp.task('sass', function() {
 
 
 gulp.task('watch', function() {
-    gulp.watch('src/**/*.scss', ['sass']);
+    gulp.watch('src/**/**/*.scss', ['sass']);
 });
 
 
