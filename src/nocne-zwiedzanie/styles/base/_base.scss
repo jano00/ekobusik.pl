@@ -198,10 +198,17 @@ p {
   z-index: -1;
 }
 
-ul {
-  list-style-type: circle;
-}
 
-li {
-  margin: .5em;
+
+.caption {
+  font-size: .8em;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: .5% 1%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity .2s, visibility .2s;
 }

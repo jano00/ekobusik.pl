@@ -12,6 +12,7 @@
     text-align: center;
     background: linear-gradient(51deg, rgba(7, 0, 60, 0.4), rgba(32, 49, 81, 1));
     min-height: 300px;
+    position: relative;
 
     /*.call-now {
       padding: 0 1% 0 1%;
@@ -66,7 +67,6 @@
     .call {
       border: 2px solid white;
       border-radius: 20px;
-      //padding: 1%;
       line-height: 2em;
       margin: 2em auto;
       max-width: 350px;
@@ -84,6 +84,13 @@
         .icon {
          top: 0;
         }
+      }
+    }
+
+    &:hover .caption {
+
+      @media screen and (min-width: 950px){
+        opacity: .6;
       }
     }
   }

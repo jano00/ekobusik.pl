@@ -1,12 +1,9 @@
-
-
 .price {
   .content-box {
 
     .h2 {
       margin-bottom: 5%;
     }
-
 
     .call {
       border-radius: 20px;
@@ -42,11 +39,11 @@
     display: flex;
 
     .img-box {
-      order: 1;
+      order: 2;
     }
 
     .content-box {
-      order: 2;
+      order: 1;
     }
   }
 }

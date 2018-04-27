@@ -61,25 +61,10 @@ header {
         transform: translate(-50%,-50%);
       }
 
-      .caption {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        padding: .5% 1%;
-        text-align: center;
-        background-color: rgba(0, 0, 0, 0.6);
-        cursor: pointer;
-        visibility: hidden;
-        opacity: 0;
-        transition: opacity .2s, visibility .2s;
-
-      }
-
       &:hover .caption {
 
         @media screen and (min-width: 950px){
-          visibility: visible;
-          opacity: 1;
+          opacity: .8;
         }
       }
     }
